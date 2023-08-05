@@ -152,8 +152,8 @@
               <span>01</span>
               <h4>Premium Facilities</h4>
               <p>Da Home Base takes pride in providing top-quality facilities. 
-                Our state-of-the-art saunas, fully stocked bars, and indulgent 
-                steam baths are designed to deliver the utmost comfort and luxury.</p>
+                Our state-of-the-art saunas and steam baths are designed to 
+                deliver the utmost comfort and luxury.</p>
             </div>
           </div>
 
@@ -162,7 +162,8 @@
               <span>02</span>
               <h4>Versatile Offerings</h4>
               <p>Our company offers a diverse range of experiences, making
-                 it the perfect choice for various occasions. </p>
+                 it the perfect choice for various occasions. 
+                Have the best of your moments with us!</p>
             </div>
           </div>
 
@@ -171,17 +172,16 @@
               <span>03</span>
               <h4> Exemplary Hospitality</h4>
               <p> At Da Home Base, customer satisfaction is our top priority. 
-                Our dedicated team of professionals is committed to delivering exceptional service,
-                 ensuring that your every need is met with warmth and efficiency.</p>
+                Our dedicated team of professionals is committed to delivering exceptional service.</p>
             </div>
           </div>
           <div class="col-lg-3 mt-4 mt-lg-0">
             <div class="box" data-aos="zoom-in" data-aos-delay="300">
               <span>04</span>
               <h4> Unforgettable Experience</h4>
-              <p> Choosing Da Home Base guarantees an unforgettable experience. 
+              <p>Da Home Base guarantees an unforgettable experience. 
                 From the moment you step through our doors, you'll be immersed
-                 in an atmosphere of relaxation, indulgence, and joy.</p>
+                 in an atmosphere of relaxation</p>
             </div>
           </div>
 
@@ -548,41 +548,36 @@
           <p>Book a Table</p>
         </div>
 
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+        <form action="forms/book-a-table.php" method="post" class="php-email-form">
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+             
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required >
+              
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="number" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+              <input type="number" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
+             
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+              <input type="date" name="date" class="form-control" id="date" placeholder="Date" required>
+              
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="time" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+              <input type="time" class="form-control" name="time" id="time" placeholder="Time"required >
+              
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="number" class="form-control" name="people" id="people" placeholder="number of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-              <div class="validate"></div>
+              <input type="number" class="form-control" name="people" id="people" placeholder="number of people" required>
+             
             </div>
           </div>
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            
           </div>
           <div class="text-center"><button type="submit">Book a Table</button></div>
         </form>
@@ -910,7 +905,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post"  class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -924,11 +919,6 @@
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
